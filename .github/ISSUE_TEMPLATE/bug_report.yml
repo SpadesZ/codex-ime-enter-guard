@@ -1,0 +1,38 @@
+name: Bug report
+description: Report an IME Enter behavior problem
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What happened?
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: Windows 11 24H2
+  - type: input
+    id: ime
+    attributes:
+      label: IME
+      placeholder: Microsoft Bopomofo, Microsoft Pinyin, Google Japanese Input
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Guard mode
+      options:
+        - composition
+        - plain
+        - all
+        - not sure
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Please avoid sharing private prompt text.
+    validations:
+      required: true

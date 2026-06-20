@@ -1,0 +1,23 @@
+name: Smoke Tests
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  test:
+    name: Run Smoke Tests
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Run Smoke Tests
+      shell: pwsh
+      run: |
+        .\tools\test-codex-ime-enter-guard.ps1

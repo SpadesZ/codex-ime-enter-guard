@@ -37,6 +37,12 @@ Run a lightweight self-test:
 powershell -NoProfile -ExecutionPolicy Bypass -File .\tools\codex-ime-enter-guard.ps1 -SelfTest
 ```
 
+Run lightweight smoke checks for the helper scripts:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\tools\test-codex-ime-enter-guard.ps1
+```
+
 ## Modes
 
 - `composition`: default; block Enter only while an IME composition string is present.

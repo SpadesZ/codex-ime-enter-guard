@@ -39,8 +39,6 @@ The self-test compiles the embedded C# helper. It does not simulate an IME, inst
 
 After starting, try composing a short message in Codex with your own input method. Check candidate confirmation and message submission before relying on the guard. If composition is not detected, see the stricter modes below.
 
-## Technical Details
-
 ## Why
 
 Chinese, Japanese, and Korean IME users often press Enter to confirm a
